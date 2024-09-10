@@ -1,0 +1,76 @@
+/* Import custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap');
+
+/* Container padding and alignment */
+.container {
+    max-width: 1200px; /* Adjust container width */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Heading styles */
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+/* Lead paragraph style */
+.lead {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Card styles */
+.category-card {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid #dc3545;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-text {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: #fff;
+}

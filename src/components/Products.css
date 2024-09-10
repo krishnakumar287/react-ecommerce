@@ -1,0 +1,140 @@
+/* Import custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
+/* Container width adjustment */
+.container {
+    max-width: 1200px; /* Adjust this value to your preference */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Optional: add horizontal padding for better spacing */
+}
+
+/* Adjust card size */
+.product-card {
+    width: 100%; /* Full width within its container */
+    max-width: 400px; /* Maximum width for the card */
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #dc3545;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center the card */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Responsive adjustments for cards */
+@media (max-width: 1200px) {
+    .product-card {
+        max-width: 250px; /* Adjust maximum width for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .product-card {
+        max-width: 100%; /* Full width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 100%; /* Full width on small screens */
+    }
+    
+    /* Reduce font size for smaller screens */
+    .card-title {
+        font-size: 1.1rem; /* Smaller font size */
+    }
+
+    .price {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+}
+
+/* Adjust image size within the card */
+.product-card img {
+    width: 100%; /* Full width for better fit */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-bottom: 2px solid #dc3545; /* Separator line for a clean look */
+}
+
+/* Title adjustments */
+.card-title {
+    font-family: 'Poppins', sans-serif; /* Change font family to Poppins for modern look */
+    font-size: 1.25rem; /* Adjust font size for better readability */
+    font-weight: 600; /* Semi-bold for emphasis */
+    color: #fff;
+    margin: 0.5rem 0; /* Space around the title */
+    text-transform: capitalize; /* Capitalize first letter of each word */
+}
+
+/* Text color adjustments */
+.card-text,
+.price,
+.list-group-item {
+    color: #fff;
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.5rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold for emphasis */
+    color: #dc3545;
+    margin: 1rem 0;
+}
+
+/* Adjust button sizes */
+.btn-dark {
+    background-color: #000;
+    border-color: #dc3545;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif; /* Apply custom font */
+}
+
+.btn-dark:hover {
+    background-color: #dc3545;
+    border-color: #000;
+}
+
+/* Buttons in the filter section */
+.buttons .btn {
+    border-color: #dc3545;
+    color: #dc3545;
+    padding: 0.4rem 1rem;
+    font-family: 'Roboto', sans-serif; /* Apply custom font */
+}
+
+.buttons .btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Centered Skeleton loader */
+.skeleton-wrapper {
+    text-align: center;
+}
+
+/* Card Footer Styling (if used) */
+.card-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-top: 1px solid #dc3545;
+}
+
+/* Adjust card body actions positioning */
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Display adjustments */
+.display-5 {
+    font-family: 'Poppins', sans-serif; /* Change to Poppins for modern look */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: 700; /* Semi-bold to make the text stand out */
+    color: #dc3545; /* Red color to match the theme */
+    text-align: center; /* Center-align the text */
+    margin: 1rem 0; /* Add vertical space around the heading */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+}
